@@ -1,4 +1,4 @@
-//
+﻿//
 //  SceneLocationEstimate+Extensions.swift
 //  ARKit+CoreLocation
 //
@@ -11,6 +11,7 @@ import SceneKit
 
 extension SceneLocationEstimate {
     ///Compares the location's position to another position, to determine the translation between them
+/// Translates lat long alt in transform matrix
     func locationTranslation(to position: SCNVector3) -> LocationTranslation {
         return LocationTranslation(
             latitudeTranslation: Double(self.position.z - position.z),
