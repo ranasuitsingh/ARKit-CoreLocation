@@ -1,4 +1,4 @@
-//
+﻿//
 //  SceneLocationEstimate.swift
 //  ARKit+CoreLocation
 //
@@ -15,7 +15,7 @@ class SceneLocationEstimate {
     let position: SCNVector3
     
     init(location: CLLocation, position: SCNVector3) {
-        self.location = location
+//        self.location = location
         self.position = position
     }
 }
